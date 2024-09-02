@@ -1,0 +1,3 @@
+.sections-style {
+  @apply min-w-full md:min-h-screen bg-background-primary;
+}
