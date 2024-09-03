@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Logo } from "./logo";
 import { Link } from "react-router-dom";
+import { PrimaryButton } from "../buttons/primary_button";
 import { useCarsContext } from "../../../context/cars_context/cars_context";
 
 export const Header = ({ sectionId }) => {
@@ -39,8 +40,8 @@ export const Header = ({ sectionId }) => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-[999] min-w-full h-[79px] flex items-center px-4 ">
-      <div className="flex flex-row w-full h-[47px] justify-between items-center px-36">
+    <div className="w-[1440px] h-[79px] m-auto flex items-center justify-center px-4 bg-background-primary">
+      <div className="flex flex-row w-[1200px] h-[47px] justify-between items-center">
         <button type="button" onClick={() => scrollToSection("hero")}>
           <Logo />
         </button>
@@ -56,12 +57,7 @@ export const Header = ({ sectionId }) => {
           </ul>
         </div>
         <div className="flex w-[300px] h-12 justify-end items-center ">
-          <button
-            className="bg-primary rounded-lg py-3 px-6 text-white"
-            type="button"
-          >
-            Zadzwoń do nas
-          </button>
+          <PrimaryButton>Zadzwoń do nas</PrimaryButton>
         </div>
       </div>
     </div>
