@@ -5,9 +5,5 @@ export const GalleryCard = ({ children }) => {
 };
 
 export const GalleryBlock = ({ children }) => {
-  return (
-    <div className="w-[1264px] max-h-[446px] flex flex-row gap-16">
-      {children}
-    </div>
-  );
+  return <div className="w-[1264px] flex flex-row gap-16">{children}</div>;
 };

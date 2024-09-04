@@ -40,12 +40,12 @@ export const Header = ({ sectionId }) => {
   }, []);
 
   return (
-    <div className="w-[1440px] h-[79px] m-auto flex items-center justify-center px-4 bg-background-primary">
-      <div className="flex flex-row w-[1200px] h-[47px] justify-between items-center">
+    <div className="w-full m-auto flex items-center justify-center py-4 bg-background-primary">
+      <div className="flex flex-row w-[1200px] justify-between items-center">
         <button type="button" onClick={() => scrollToSection("hero")}>
           <Logo />
         </button>
-        <div className="hidden md:block w-36 h-6 ">
+        <div className="hidden md:block ">
           <ul className="list-none flex flex-row items-center gap-6 font-robotoFlex font-normal text-[16px] leading-6 text-center">
             {sectionId.map((section, index) => (
               <li key={index} onClick={() => scrollToSection(section)}>
@@ -56,7 +56,7 @@ export const Header = ({ sectionId }) => {
             ))}
           </ul>
         </div>
-        <div className="flex w-[300px] h-12 justify-end items-center ">
+        <div className="flex w-[300px] justify-end items-center ">
           <PrimaryButton>Zadzwoń do nas</PrimaryButton>
         </div>
       </div>

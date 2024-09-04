@@ -2,17 +2,18 @@ import React from "react";
 import { Header } from "./components/header";
 import { GalleryMenu } from "./components/gallery_menu";
 import { GalleryBlock, GalleryCard } from "./components/gallery_block";
+
 export const Gallery = () => {
   return (
     <section
       id="Galeria zdjęć"
-      className="h-[825px] w-[1440px] m-auto bg-background-primary "
+      className="w-full m-auto flex flex-col gap-6 bg-background-primary overflow-hidden"
     >
-      <div className="flex flex-col gap-6 w-[1440px] h-[207px] pl-20">
+      <div className="flex flex-col gap-6 w-full pt-[80px]">
         <Header />
         <GalleryMenu />
       </div>
-      <div className="w-max flex flex-row overflow-y-hidden gap-16 pl-20">
+      <div className="w-[1264px] flex py-[80px] flex-row gap-16 m-auto">
         <GalleryBlock>
           <GalleryCard>
             <img src="/cars/passenger/bmw.jpg" className="w-full h-full" />
@@ -30,6 +31,7 @@ export const Gallery = () => {
           </GalleryCard>
         </GalleryBlock>
       </div>
+      <div className="w-20 h-6 m-auto">kropki</div>
     </section>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Logo = () => {
   return (
-    <div className="flex flex-row min-w-[300px] h-[30px] justify-start items-center">
+    <div className="flex flex-row w-[300px] h-[30px] justify-start items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="26px"

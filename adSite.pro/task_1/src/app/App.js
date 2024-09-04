@@ -8,7 +8,7 @@ import { CarsContext } from "../context/cars_context/cars_context";
 function App() {
   return (
     <CarsContext>
-      <main className="m-0 p-0 bg-background-primary">
+      <main className="m-0 p-0 bg-background-primary w-full">
         <Router basename="/">
           <Header sectionId={SECTION_ID} />
           <Routes>
