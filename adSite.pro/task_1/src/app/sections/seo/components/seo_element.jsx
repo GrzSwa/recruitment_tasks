@@ -9,15 +9,15 @@ const Header = ({ text }) => (
 );
 
 const Content = ({ text }) => (
-  <div className="w-full max-w-[576px] h-full max-h-[93px] gap-6 flex flex-col ">
-    <h5 className="w-full h-[42px] font-robotoCondensed font-normal text-sm leading-[21px] text-white mb-4">
+  <div className="w-full gap-6 flex flex-col ">
+    <h5 className="w-full h-[42px] font-robotoCondensed font-normal text-sm leading-[21px] text-white mb-4 line-clamp-2 ">
       {text}
     </h5>
   </div>
 );
 
 const MoreButton = () => (
-  <button class="text-center w-fit text-white" type="button">
+  <button className="text-center w-fit text-white" type="button">
     <div className="flex flex-row items-center border-b-[1.5px] pb-[6px] gap-[6px]">
       Rozwiń
       <svg
@@ -39,16 +39,11 @@ const MoreButton = () => (
   </button>
 );
 
-export const SeoElement = () => {
-  const firstText =
-    "Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nullacommodo.";
-  const secondText =
-    "Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]";
-
+export const SeoElement = ({ header, content }) => {
   return (
     <div className="w-[576px] gap-4 flex flex-col">
-      <Header text={firstText} />
-      <Content text={secondText} />
+      <Header text={header} />
+      <Content text={content} />
       <MoreButton />
     </div>
   );

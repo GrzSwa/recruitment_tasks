@@ -12,6 +12,7 @@ module.exports = {
       "background-secondary": "#282828",
       primary: "#0147FF",
       secondary: "#282828",
+      third: "#DEDEDE",
       black: "#000000",
       white: "#FFFFFF",
     },

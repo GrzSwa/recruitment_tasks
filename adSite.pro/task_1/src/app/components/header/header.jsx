@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Logo } from "./logo";
 import { Link } from "react-router-dom";
 import { PrimaryButton } from "../buttons/primary_button";
-import { useCarsContext } from "../../../context/cars_context/cars_context";
 
 export const Header = ({ sectionId }) => {
   const [activeLink, setActiveLink] = useState("hero");
