@@ -41,7 +41,7 @@ export const Header = ({ sectionId }) => {
 
   return (
     <div className="w-full m-auto flex items-center justify-center py-4 bg-background-primary">
-      <div className="flex flex-row w-[1200px] justify-between items-center">
+      <div className="flex flex-row w-[1200px] justify-between items-center z-10">
         <button type="button" onClick={() => scrollToSection("hero")}>
           <Logo />
         </button>

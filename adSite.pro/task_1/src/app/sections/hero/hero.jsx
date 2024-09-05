@@ -4,6 +4,7 @@ import { Paragraph } from "./components/paragraph";
 import { SecondaryButton } from "../../components/buttons/secondary_button";
 import { PrimaryButton } from "../../components/buttons/primary_button";
 import { CarsImage } from "./components/cars_image";
+import { Road } from "./components/road";
 
 export const Hero = () => {
   return (
@@ -22,9 +23,8 @@ export const Hero = () => {
             <SecondaryButton>Zadzwoń do nas</SecondaryButton>
           </div>
         </div>
-        <div className="flex justify-end absolute top-[328px] right-0">
-          <CarsImage />
-        </div>
+        <CarsImage />
+        <Road />
       </main>
     </section>
   );
